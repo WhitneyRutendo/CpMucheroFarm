@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A8AEC"
+    tools:context="com.whitney.cpmucherofarm.FarmInfo">
+
+    <TextView
+        android:id="@+id/farmInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Parklands farm is situated in Norton along the Harare-Bulawayo highway. It is owned by Colonel C.P Muchero."
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cropsGrown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inventory"
+        android:layout_alignLeft="@+id/inventory"
+        android:layout_alignStart="@+id/inventory"
+        android:layout_marginBottom="21dp"
+        android:background="@android:color/darker_gray"
+        android:text="Crops Grown" />
+
+    <Button
+        android:id="@+id/employeeProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farmInfo"
+        android:layout_marginTop="203dp"
+        android:layout_toEndOf="@+id/livestock"
+        android:layout_toRightOf="@+id/livestock"
+        android:background="@android:color/holo_green_light"
+        android:text="Employee Profiles" />
+
+    <Button
+        android:id="@+id/inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accounting"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@+id/accounting"
+        android:layout_toRightOf="@+id/accounting"
+        android:background="@android:color/holo_purple"
+        android:text="Inventory" />
+
+    <Button
+        android:id="@+id/livestock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/employeeProfile"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@+id/accounting"
+        android:layout_toRightOf="@+id/accounting"
+        android:background="@color/colorPrimary"
+        android:text="Livestock" />
+
+    <Button
+        android:id="@+id/accounting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/livestock"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Accounting" />
+
+</RelativeLayout>
